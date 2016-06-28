@@ -13,6 +13,11 @@
   }
   
   // grid--modifiers
+  &--is-mobile {
+    display: flex;
+    flex-direction: row;
+  }
+
   &--is-centered {
     justify-content: center;
   }
@@ -48,6 +53,56 @@
   &__item {
     flex: 1;
     padding: ($base-spacing-unit * 0.5);
+
+    &--is-whole {
+      flex: none;
+      width: 100%;
+    }
+
+    &--is-three-quarters {
+      flex: none;
+      width: 75%;
+    }
+
+    &--is-two-thirds {
+      flex: none;
+      width: 66%;
+    }
+
+    &--is-half {
+      flex: none;
+      width: 50%;
+    }
+
+    &--is-one-third {
+      flex: none;
+      width: 33%;
+    }
+
+    &--is-one-quarter {
+      flex: none;
+      width: 25%;
+    }
+
+    &--is-offset-three-quarters {
+      margin-left: 75%;
+    }
+
+    &--is-offset-two-thirds {
+      margin-left: 66%;
+    }
+
+    &--is-offset-half {
+      margin-left: 50%;
+    }
+
+    &--is-offset-one-third {
+      margin-left: 33%;
+    }
+
+    &--is-offset-one-quarter {
+      margin-left: 25%;
+    }
   }
 
   @include mq(map-get($break, s)) {
