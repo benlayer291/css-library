@@ -48,7 +48,8 @@
 @import 'generic/_generic.shared.scss';
 
 // 4- Base
-
+@import 'base/_base.page.scss';
+@import 'base/_base.headings.scss';
 
 // 5- Objects
 @import 'objects/_objects.grid.scss';
