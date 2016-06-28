@@ -1,0 +1,106 @@
+/*
+  Main stylesheet, including InuitCSS imports, InuitCSS overrides
+  and components. Initial text describes modules used. 
+*/
+
+/*
+  CONTENTS
+  key: * = included ^ = to include from https://github.com/inuitcss or custom
+
+  1-SETTINGS
+  * Default.......... inuitcss' default setings (Inuit)
+  * Global........... Globally available variables and settings/config (Custom)
+  * Colors........... Color palette for the site (Custom)
+  * Responsive....... Setup breakpoints and give values (Inuit)
+
+  2-TOOLS
+  * Functions........ inuitcss' default functions (Inuit)
+  * Mixins........... inuitcss' default mixins (Inuit)
+  * Responsive....... responsive tooling, requires responsive settings (Inuit)
+  * Aliases.......... rename some long inuit-css variables (Custom)
+
+  3-GENERIC
+  * Normalize........ Makes browsers render elements consistently (Inuit)
+  * Reset............ Resets margins and paddings for certain elements (Inuit)
+  * Box-sizing....... Default 'box-sizing' (Inuit)
+  * Shared........... Apply consistent margins and paddings for certain elements (Inuit)
+
+  4-BASE
+  * Page............. Styles HTML element: font-size, background-color (Inuit)
+  ^ Headings......... Heading styles (Inuit)
+  ^ Type............. Miscellaneous type styles (Custom)
+  ^ Links............ Hyperlink styles (Custom)
+  ^ Lists............ inuitcss list styles (Inuit)
+  ^ Images........... inuitcss images (Inuit)
+  ^ Quotes........... Styling for blockquotes, etc. (Custom)
+
+  5-OBJECTS
+  ^ Wrappers......... Wrappers and page constraints. (Custom)
+  ^ Buttons.......... inuitcss’ buttons module. (Inuit)
+  ^ Layout........... inuitcss’ layout tool i.e. Grids. (Inuit)
+  ^ Box.............. inuitcss’ box object. (Inuit)
+  ^ Media............ The media object? (Inuit)
+  ^ Flag............. The flag object? (Inuit)
+  ^ UI list.......... inuitcss’ UI list, for making lists of items (Inuit)
+
+  6-COMPONENTS (All custom and to be built and to be included, these are possible examples)
+  ^ Page-head........ Page header styles.
+  ^ Bands............ Full-width page bands.
+  ^ Promo............ Lead promo blocks on the home page.
+  ^ Page-foot........ Page footer styles.
+  ^ Page-micro....... Page copyright styles.
+  ^ Site-nav......... Site’s main nav area.
+  ^ Nav-secondary.... Smaller, in-page nav.
+  ^ Buttons.......... Extension of inuitcss’ buttons.
+  ^ Boxes............ Extension of inuitcss’ box object
+  ^ Post............. Post-specific styles.
+  ^ Pull-quote....... Large, featured quotes.
+  ^ Carousel......... Pure CSS carousel component.
+  ^ Iconic........... Iconic icon styles.
+  ^ Sprites.......... Image sprite styles.
+  ^ Feature list..... Big blocky lists of feature items.
+  ^ Annotate......... Pure CSS figure annotations.
+
+  7-TRUMPS
+  ^ Clearfix......... We still need this :(. (Inuit)
+  ^ Widths........... Simple width helper classes. (Inuit)
+  ^ Widths-responsive Polyfill for responsive width classes. (Custom)
+  ^ Spacing.........  Micro-level spacing. (Inuit)
+*/
+
+// 1 - Settings
+@import 'node_modules/inuit-defaults/settings.defaults';
+@import 'node_modules/inuit-responsive-settings/settings.responsive';
+@import 'settings/settings.colors.scss';
+@import 'settings/settings.global.scss';
+
+// 2- Tools
+@import 'node_modules/inuit-functions/tools.functions';
+@import 'node_modules/inuit-mixins/tools.mixins';
+@import 'node_modules/inuit-responsive-tools/tools.responsive';
+@import 'tools/tools.aliases';
+@import 'tools/tools.mixins';
+
+// 3- Generic
+@import 'node_modules/inuit-normalize/generic.normalize';
+@import 'node_modules/inuit-reset/generic.reset';
+@import 'node_modules/inuit-box-sizing/generic.box-sizing';
+@import 'node_modules/inuit-shared/generic.shared';
+
+// 4- Base
+@import 'node_modules/inuit-page/base.page';
+@import 'node_modules/inuit-headings/base.headings';
+@import 'base/base.links';
+
+// 5- Objects
+@import 'objects/_objects.wrappers';
+@import 'node_modules/inuit-layout/objects.layout';
+
+// 6- Components
+@import 'components/components.header.scss';
+@import 'components/components.nav.scss';
+@import 'components/components.page-section.scss';
+@import 'components/components.hero.scss';
+
+// 7- Trumps
+
