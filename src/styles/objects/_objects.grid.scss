@@ -1,0 +1,57 @@
+.grid {
+  // grid properties for all sizes
+  margin-top: ($base-spacing-unit * -0.5);
+  margin-right: ($base-spacing-unit * -0.5);
+  margin-left: ($base-spacing-unit * -0.5);
+
+  &:last-child {
+    margin-bottom: ($base-spacing-unit * -0.5);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: ($base-spacing-unit * 0.5);
+  }
+  
+  // grid--modifiers
+  &--is-centered {
+    justify-content: center;
+  }
+
+  &--is-gapless {
+    margin-top: 0;
+    margin-right: 0;
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: ($base-spacing-unit);
+    }
+
+    & > .grid__item {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &--is-vcentered {
+    align-items: center;
+  }
+
+  &--is-multiline {
+    flex-wrap: wrap;
+  }
+  
+  // grid-items styles
+  &__item {
+    flex: 1;
+    padding: ($base-spacing-unit * 0.5);
+  }
+
+  @include mq(map-get($break, s)) {
+    display: flex;
+    flex-direction: row;
+  }
+}
