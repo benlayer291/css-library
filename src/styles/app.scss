@@ -39,6 +39,7 @@
 
 // 2- Tools
 @import 'tools/_tools.mixins.scss';
+@import 'tools/_tools.aliases.scss';
 
 // 3- Generic
 @import 'generic/_generic.box-sizing.scss';
@@ -53,6 +54,7 @@
 
 // 5- Objects
 @import 'objects/_objects.grid.scss';
+@import 'objects/_objects.wrapper.scss';
 
 // 6- Components
 
