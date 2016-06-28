@@ -49,62 +49,115 @@
     flex-wrap: wrap;
   }
   
-  // grid-items styles
+  // grid-items styles, only activated on tablet or larger unless specified
   &__item {
     flex: 1;
     padding: ($base-spacing-unit * 0.5);
-
-    &--is-whole {
-      flex: none;
-      width: 100%;
+    
+    &--is-mobile-whole {
+        flex: none;
+        width: 100%;
     }
 
-    &--is-three-quarters {
+    &--is-mobile-three-quarters {
       flex: none;
       width: 75%;
     }
 
-    &--is-two-thirds {
+    &--is-mobile-two-thirds {
       flex: none;
       width: 66%;
     }
 
-    &--is-half {
+    &--is-mobile-half {
       flex: none;
       width: 50%;
     }
 
-    &--is-one-third {
+    &--is-mobile-one-third {
       flex: none;
       width: 33%;
     }
 
-    &--is-one-quarter {
+    &--is-mobile-one-quarter {
       flex: none;
       width: 25%;
     }
 
-    &--is-offset-three-quarters {
+    &--is-mobile-offset-three-quarters {
       margin-left: 75%;
     }
 
-    &--is-offset-two-thirds {
+    &--is-mobile-offset-two-thirds {
       margin-left: 66%;
     }
 
-    &--is-offset-half {
+    &--is-mobile-offset-half {
       margin-left: 50%;
     }
 
-    &--is-offset-one-third {
+    &--is-mobile-offset-one-third {
       margin-left: 33%;
     }
 
-    &--is-offset-one-quarter {
+    &--is-mobile-offset-one-quarter {
       margin-left: 25%;
     }
-  }
 
+    @include mq(map-get($break, s)) {
+
+      &--is-whole {
+        flex: none;
+        width: 100%;
+      }
+
+      &--is-three-quarters {
+        flex: none;
+        width: 75%;
+      }
+
+      &--is-two-thirds {
+        flex: none;
+        width: 66%;
+      }
+
+      &--is-half {
+        flex: none;
+        width: 50%;
+      }
+
+      &--is-one-third {
+        flex: none;
+        width: 33%;
+      }
+
+      &--is-one-quarter {
+        flex: none;
+        width: 25%;
+      }
+
+      &--is-offset-three-quarters {
+        margin-left: 75%;
+      }
+
+      &--is-offset-two-thirds {
+        margin-left: 66%;
+      }
+
+      &--is-offset-half {
+        margin-left: 50%;
+      }
+
+      &--is-offset-one-third {
+        margin-left: 33%;
+      }
+
+      &--is-offset-one-quarter {
+        margin-left: 25%;
+      }
+    }
+  }
+  // grid styles, only activated on tablet or larger unless specified
   @include mq(map-get($break, s)) {
     display: flex;
     flex-direction: row;
