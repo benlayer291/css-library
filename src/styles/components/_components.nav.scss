@@ -61,7 +61,13 @@
   }
 
   &__brand {
+    padding-left: 0;
 
+    a {
+      @include attention() {
+        text-decoration: none;
+      }
+    }
   }
 
   &__toggle {

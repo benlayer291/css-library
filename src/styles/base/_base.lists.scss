@@ -1,0 +1,12 @@
+ul {
+    list-style-type: disc;
+    margin-left: $base-spacing-unit;
+
+    ul {
+        list-style-type: circle;
+    }
+}
+
+li {
+  line-height: $base-line-height * 1.25;
+}
