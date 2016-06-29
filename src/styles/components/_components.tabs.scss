@@ -13,6 +13,7 @@
     align-items: center;
     flex: 1;
     margin-left: 0;
+    margin-bottom: $base-spacing-unit--small;
     border-bottom: 1px solid $grey;
 
     &--is-left {
@@ -31,7 +32,7 @@
     }
 
     &:last-child {
-      margin-bottom: $base-spacing-unit;
+      margin-bottom: $base-spacing-unit--small;
     }
   }
 
@@ -45,7 +46,9 @@
       justify-content: center;
 
       list-style-type: none;
-      padding: $base-spacing-unit--small * 0.5 $base-spacing-unit--small;
+      padding-top: $base-spacing-unit--small * 0.5;
+      padding-right: $base-spacing-unit--small;
+      padding-bottom: $base-spacing-unit--small * 0.5;
       border-bottom: 1px solid $base-text-color;
 
       &:hover {

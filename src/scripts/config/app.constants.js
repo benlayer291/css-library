@@ -1,5 +1,5 @@
 var AppConstants = {
-  appName: 'Global Network'
+  appName: 'Styleguide'
 };
 
 module.exports = AppConstants;

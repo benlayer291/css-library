@@ -1,8 +1,10 @@
-HomeCtrl.$inject = [];
+HomeCtrl.$inject = ['$rootScope'];
 
-function HomeCtrl() {
+function HomeCtrl($rootScope) {
  
   var self = this;
+
+  self.pageTitle = $rootScope.pageTitle;
 
 }
 

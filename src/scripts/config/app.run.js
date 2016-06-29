@@ -15,10 +15,10 @@ function AppRun(AppConstants, $rootScope) {
     $rootScope.pageTitle = '';
 
     if (title) {
-      $rootScope.pageTitle += title + ' - ';
+      $rootScope.pageTitle += AppConstants.appName + ' - ' + title;
+    } else {
+      $rootScope.pageTitle += AppConstants.appName;
     }
-
-    $rootScope.pageTitle += AppConstants.appName;
   };
 
 }

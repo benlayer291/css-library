@@ -10,13 +10,15 @@ var uiRouter = require('angular-ui-router');
 var templates = require('./config/app.templates');
 var layout = require('./layout');
 var home = require('./home');
+var base = require('./base');
 
 // Modules to inject into our Angular app
 var requires = [
   'ui.router',
   'templates',
   'app.layout',
-  'app.home'
+  'app.home',
+  'app.base'
 ];
 
 // Angular app set-up

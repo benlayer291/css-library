@@ -1,0 +1,11 @@
+.title {
+  font-weight: $weight-title-bold;
+}
+
+.subtitle {
+  font-weight: $weight-title-normal;
+
+  &--has-title {
+    margin-top: -$base-spacing-unit--small;
+  }
+}
