@@ -27,16 +27,16 @@
     padding-bottom: $base-spacing-unit * 10;
   }
 
-  &--is-full {
-    min-height: 100vh;
+  // &--is-full {
+  //   min-height: 100vh;
 
-    .hero-body {
-      align-items: center;
-      display: flex;
+  //   .hero-body {
+  //     align-items: center;
+  //     display: flex;
 
-      & > .wrapper {
-        flex: 1;
-      }
-    }
-  }
+  //     & > .wrapper {
+  //       flex: 1;
+  //     }
+  //   }
+  // }
 }
