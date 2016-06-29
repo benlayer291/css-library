@@ -1,0 +1,42 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+
+  &__head {
+    flex-shrink: 0;
+  }
+
+  &__body {
+    flex: 1;
+    padding: $base-spacing-unit--large $base-spacing-unit;
+  }
+
+  &__foot {
+    flex-shrink: 0;
+  }
+
+  &--is-medium {
+    padding-top: $base-spacing-unit * 5;
+    padding-bottom: $base-spacing-unit * 5;
+  }
+
+  &--is-large {
+    padding-top: $base-spacing-unit * 10;
+    padding-bottom: $base-spacing-unit * 10;
+  }
+
+  &--is-full {
+    min-height: 100vh;
+
+    .hero-body {
+      align-items: center;
+      display: flex;
+
+      & > .wrapper {
+        flex: 1;
+      }
+    }
+  }
+}
