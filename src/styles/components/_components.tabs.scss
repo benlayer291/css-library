@@ -13,7 +13,7 @@
     align-items: center;
     flex: 1;
     margin-left: 0;
-    margin-bottom: $base-spacing-unit--small;
+    margin-bottom: $base-spacing-unit;
     border-bottom: 1px solid $grey;
 
     &--is-left {
@@ -32,7 +32,7 @@
     }
 
     &:last-child {
-      margin-bottom: $base-spacing-unit--small;
+      margin-bottom: $base-spacing-unit;
     }
   }
 
