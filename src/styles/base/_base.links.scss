@@ -1,0 +1,10 @@
+a { 
+    cursor: pointer;
+    text-decoration: none;
+    color: $base-text-color;
+
+    @include attention() {
+        text-decoration: underline;
+    }
+
+}
