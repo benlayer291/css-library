@@ -1,0 +1,43 @@
+<section class="hero hero--is-medium" style=" background: yellow;">
+  <div class="hero__body">
+    <div class="wrapper">
+      <h1 class="title">Styleguide - {{ $ctrl.pageTitle }}</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrapper">
+    
+    <div class="tabs">
+      <ul class="tabs__list">
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.settings.breakpoints">
+            Breakpoints
+          </a>
+        </li>
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.settings.typography">
+            Typography
+          </a>
+        </li>
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.settings.colors">
+            Colors
+          </a>
+        </li>
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.settings.units">
+            Units
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <h1 class="title">{{ $ctrl.pageTitle }}</h1>
+    <h4 class="subtitle subtitle--has-title">Default styles</h4>
+  </div>
+</section>
+
+<!-- Where the thing we're looking will render -->
+<div ui-view></div>

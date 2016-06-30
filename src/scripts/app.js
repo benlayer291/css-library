@@ -10,6 +10,7 @@ var uiRouter = require('angular-ui-router');
 var templates = require('./config/app.templates');
 var layout = require('./layout');
 var home = require('./home');
+var settings = require('./settings');
 var base = require('./base');
 var objects = require('./objects');
 var components = require('./components');
@@ -20,6 +21,7 @@ var requires = [
   'templates',
   'app.layout',
   'app.home',
+  'app.settings',
   'app.base',
   'app.objects',
   'app.components'
