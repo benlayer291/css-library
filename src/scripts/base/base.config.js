@@ -15,7 +15,7 @@ function BaseConfig($stateProvider) {
       url: '/headings',
       controller: 'BaseItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'base/base-headings.html',
+      templateUrl: 'base/abstract-views/base-headings.html',
       title: 'Headings'
     })
 
@@ -23,7 +23,7 @@ function BaseConfig($stateProvider) {
       url: '/links',
       controller: 'BaseItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'base/base-links.html',
+      templateUrl: 'base/abstract-views/base-links.html',
       title: 'Links'
     })
 
@@ -31,7 +31,7 @@ function BaseConfig($stateProvider) {
       url: '/lists',
       controller: 'BaseItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'base/base-lists.html',
+      templateUrl: 'base/abstract-views/base-lists.html',
       title: 'Lists'
     });
 }
