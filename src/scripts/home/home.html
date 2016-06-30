@@ -106,7 +106,7 @@
         </ul>
       </div>
       <div class="grid__item grid__item--is-one-third">
-        <a ui-sref="app.objects.header({ slug: header })"">
+        <a ui-sref="app.objects.header({ slug: header })">
           <h2 class="title">Objects</h2>
         </a>
         <ul>
@@ -131,12 +131,15 @@
         </ul>
       </div>
       <div class="grid__item grid__item--is-one-third">
-        <a href="">
+        <a ui-sref="app.components.nav({ slug: nav })">
           <h2 class="title">Components</h2>
         </a>
         <ul>
           <li>
-            <a href="">Nav</a>
+            <a ui-sref="app.components.items({ slug: nav })">Nav</a>
+          </li>
+          <li>
+            <a ui-sref="app.components.items({ slug: tabs })">Tabs</a>
           </li>
         </ul>
       </div>

@@ -4,6 +4,8 @@
   align-items: stretch;
   justify-content: space-between;
 
+  margin-bottom: $base-spacing-unit--large;
+
   &__head {
     flex-shrink: 0;
   }
@@ -20,6 +22,7 @@
   &--is-medium {
     padding-top: $base-spacing-unit * 5;
     padding-bottom: $base-spacing-unit * 5;
+
   }
 
   &--is-large {

@@ -11,7 +11,8 @@ var templates = require('./config/app.templates');
 var layout = require('./layout');
 var home = require('./home');
 var base = require('./base');
-var base = require('./objects');
+var objects = require('./objects');
+var components = require('./components');
 
 // Modules to inject into our Angular app
 var requires = [
@@ -20,7 +21,8 @@ var requires = [
   'app.layout',
   'app.home',
   'app.base',
-  'app.objects'
+  'app.objects',
+  'app.components'
 ];
 
 // Angular app set-up
