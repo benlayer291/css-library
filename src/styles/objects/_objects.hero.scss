@@ -12,7 +12,7 @@
 
   &__body {
     flex: 1;
-    padding: $base-spacing-unit--large $base-spacing-unit;
+    padding: $base-spacing-unit--large 0;
   }
 
   &__foot {
@@ -42,4 +42,9 @@
   //     }
   //   }
   // }
+
+  @include mq(map-get($break, s)) {
+    padding-left: $base-spacing-unit;
+    padding-right: $base-spacing-unit;
+  } 
 }

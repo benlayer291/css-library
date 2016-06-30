@@ -1,13 +1,16 @@
 .section {
-  padding: 0 $base-spacing-unit $base-spacing-unit;
 
-  &--is-medium {
-    padding-top: $base-spacing-unit * 5;
-    padding-bottom: $base-spacing-unit * 5;
-  }
+  @include mq(map-get($break, s)) {
+    padding: 0 $base-spacing-unit $base-spacing-unit;
 
-  &--is-large {
-    padding-top: $base-spacing-unit * 10;
-    padding-bottom: $base-spacing-unit * 10;
+    &--is-medium {
+      padding-top: $base-spacing-unit * 5;
+      padding-bottom: $base-spacing-unit * 5;
+    }
+
+    &--is-large {
+      padding-top: $base-spacing-unit * 10;
+      padding-bottom: $base-spacing-unit * 10;
+    }
   }
 }

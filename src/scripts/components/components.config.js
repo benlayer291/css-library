@@ -25,6 +25,14 @@ function ComponentsConfig($stateProvider) {
       controllerAs: '$ctrl',
       templateUrl: 'components/abstract-views/components-tabs.html',
       title: 'Tabs'
+    })
+
+    .state('app.components.card', {
+      url: '/card',
+      controller: 'ComponentsItemsCtrl',
+      controllerAs: '$ctrl',
+      templateUrl: 'components/abstract-views/components-card.html',
+      title: 'Card'
     });
 }
 
