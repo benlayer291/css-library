@@ -2,7 +2,8 @@
   <div class="wrapper">
     <nav class="nav">
       <div class="nav__left">
-        <a class="nav__brand" href="#">
+        <a class="nav__brand"
+          ui-sref="app.home">
          Styleguide
         </a>
       </div>
@@ -19,11 +20,25 @@
       </span>
 
       <div class="nav__right">
-        <a class="nav__item" href="#">
+        <a class="nav__item"
+          ui-sref-active="nav__item--active"
+          ui-sref="app.home">
           Home
         </a>
-        <a class="nav__item" href="#">
-          About
+        <a class="nav__item"
+          ui-sref-active="nav__item--active"
+          ui-sref="app.base.headings({ slug: headings })">
+          Base
+        </a>
+        <a class="nav__item"
+          ui-sref-active="nav__item--active"
+          ui-sref="app.objects">
+          Objects
+        </a>
+        <a class="nav__item"
+          ui-sref-active="nav__item--active"
+          ui-sref="app.components">
+          Components
         </a>
       </div>
     </nav>
