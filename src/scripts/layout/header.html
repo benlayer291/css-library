@@ -1,10 +1,10 @@
-<div class="header">
+<div class="header" style="box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1);">
   <div class="wrapper">
     <nav class="nav">
       <div class="nav__left">
         <a class="nav__brand"
           ui-sref="app.home">
-         Styleguide
+         <h1>Styleguide</h1>
         </a>
       </div>
       <div class="nav__center">
@@ -32,7 +32,7 @@
         </a>
         <a class="nav__item"
           ui-sref-active="nav__item--active"
-          ui-sref="app.objects">
+          ui-sref="app.objects.header({ slug: header })">
           Objects
         </a>
         <a class="nav__item"

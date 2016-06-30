@@ -4,9 +4,8 @@ function ObjectsCtrl(AppConstants, $rootScope) {
 
   var self = this;
 
-  self.pageTitle = $rootScope.pageTitle;
+  self.pageTitle = $rootScope.pageTitle.replace('Styleguide - ', '');
 
-  self.pageTitle    = $rootScope.pageTitle;
   self.setPageTitle = self.setPageTitle;
 
   $rootScope.$on('$stateChangeSuccess', function(event, current) {
@@ -17,7 +16,7 @@ function ObjectsCtrl(AppConstants, $rootScope) {
     self.pageTitle = '';
 
     if (title) {
-      self.pageTitle += AppConstants.appName + ' - ' + title;
+      self.pageTitle += title;
     }
   };
 

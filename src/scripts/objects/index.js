@@ -10,7 +10,7 @@ var ObjectsConfig = require('./objects.config');
 var ObjectsCtrl = require('./objects.controller');
 var ObjectsItemsCtrl = require('./objects-items.controller');
 
-baseModule
+objectsModule
   .config(ObjectsConfig)
   .controller('ObjectsCtrl', ObjectsCtrl)
   .controller('ObjectsItemsCtrl', ObjectsItemsCtrl);

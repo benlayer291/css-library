@@ -13,18 +13,18 @@ html {
      -webkit-font-smoothing: antialiased;
 
     @include mq(map-get($break, xs)) {
-        font-size: $base-font-size * 1.000;
+        font-size: $base-font-size * 0.875;
     }
     @include mq(map-get($break, s )) {
-        font-size: $base-font-size * 1.125;
+        font-size: $base-font-size * 1.000;
     }
     @include mq(map-get($break, m)) {
-        font-size: $base-font-size * 1.250;
+        font-size: $base-font-size * 1.125;
     }
     @include mq(map-get($break, l)) {
-        font-size: $base-font-size * 1.375;
+        font-size: $base-font-size * 1.250;
     }
     @include mq(map-get($break, xl)) {
-        font-size: $base-font-size * 1.500;
+        font-size: $base-font-size * 1.375;
     }
 }

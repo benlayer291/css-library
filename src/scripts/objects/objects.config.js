@@ -57,7 +57,7 @@ function ObjectsConfig($stateProvider) {
       controllerAs: '$ctrl',
       templateUrl: 'objects/abstract-views/objects-footer.html',
       title: 'Footer'
-    })
+    });
 }
 
 module.exports = ObjectsConfig;

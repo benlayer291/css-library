@@ -1,0 +1,53 @@
+<section class="hero hero--is-medium" style=" background: yellow;">
+  <div class="hero__body">
+    <div class="wrapper">
+      <h1 class="title">Styleguide - {{ $ctrl.pageTitle }}</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrapper">
+    
+    <div class="tabs">
+      <ul class="tabs__list">
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.objects.header({ slug: 'header'})">
+            Header
+          </a>
+        </li>
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.objects.hero({ slug: 'hero'})">
+            Hero
+          </a>
+        </li>
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.objects.section({ slug: 'section'})">
+            Section
+          </a>
+        </li>
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.objects.wrapper({ slug: 'wrapper'})">
+            Wrapper
+          </a>
+        </li>
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.objects.grid({ slug: 'grid'})">
+            Grid
+          </a>
+        </li>
+        <li class="tabs__item" ui-sref-active="tabs__item--is-active">
+          <a ui-sref="app.objects.footer({ slug: 'footer'})">
+            Footer
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <h1 class="title">{{ $ctrl.pageTitle }}</h1>
+    <h4 class="subtitle subtitle--has-title">Default styles</h4>
+    <!-- Where the thing we're looking will render -->
+  </div>
+</section>
+
+<div ui-view></div>

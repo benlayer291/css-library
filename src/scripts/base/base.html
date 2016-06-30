@@ -1,7 +1,7 @@
 <section class="hero hero--is-medium" style=" background: yellow;">
   <div class="hero__body">
     <div class="wrapper">
-      <h1>{{ $ctrl.pageTitle }}</h1>
+      <h1 class="title">Styleguide - {{ $ctrl.pageTitle }}</h1>
     </div>
   </div>
 </section>
@@ -29,8 +29,10 @@
       </ul>
     </div>
     
-    <!-- Where the thing we're looking will render -->
-    <div ui-view></div>
-
+    <h1 class="title">{{ $ctrl.pageTitle }}</h1>
+    <h4 class="subtitle subtitle--has-title">Default styles</h4>
   </div>
 </section>
+
+<!-- Where the thing we're looking will render -->
+<div ui-view></div>
