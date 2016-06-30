@@ -5,10 +5,34 @@ function BaseConfig($stateProvider) {
   $stateProvider
     .state('app.base', {
       url: '/base',
+      abstract: true,
       controller: 'BaseCtrl',
       controllerAs: '$ctrl',
       templateUrl: 'base/base.html',
-      title: 'Base'
+    })
+
+    .state('app.base.headings', {
+      url: '/headings',
+      controller: 'BaseItemsCtrl',
+      controllerAs: '$ctrl',
+      templateUrl: 'base/base-headings.html',
+      title: 'Headings'
+    })
+
+    .state('app.base.links', {
+      url: '/links',
+      controller: 'BaseItemsCtrl',
+      controllerAs: '$ctrl',
+      templateUrl: 'base/base-links.html',
+      title: 'Links'
+    })
+
+    .state('app.base.lists', {
+      url: '/lists',
+      controller: 'BaseItemsCtrl',
+      controllerAs: '$ctrl',
+      templateUrl: 'base/base-lists.html',
+      title: 'Lists'
     });
 }
 

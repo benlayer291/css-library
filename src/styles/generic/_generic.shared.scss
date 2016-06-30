@@ -6,10 +6,6 @@ table,
 fieldset, figure,
 pre {
     margin-bottom: $base-spacing-unit;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
 ul, ol, dd {
