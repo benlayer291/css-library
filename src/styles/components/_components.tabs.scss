@@ -7,10 +7,23 @@
   overflow: hidden;
   overflow-x: auto;
 
+  &--is-center {
+    ul {
+      justify-content: center;
+    }
+  }
+
+  &--is-right {
+    ul {
+      justify-content: flex-end;
+    }
+  }
+
   &__list {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     flex: 1;
     margin-left: 0;
     margin-bottom: $base-spacing-unit;
