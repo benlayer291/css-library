@@ -88,9 +88,22 @@ gulp.task('lint', function(){
   .pipe(jshint.reporter('default'));
 });
 
+// Vendor
+gulp.task('vendor-scripts', function() {
+  return gulp.src('src/vendor/scripts/**/*.js')
+    .pipe(gulp.dest('./dist/vendor/scripts'))
+    .pipe(browserSync.stream())
+})
+
+gulp.task('vendor-styles', function() {
+  return gulp.src('src/vendor/styles/**/*.css')
+    .pipe(gulp.dest('./dist/vendor/styles'))
+    .pipe(browserSync.stream())
+})
+
 // Default task
 // Use 'gulp' or 'npm run serve'
-gulp.task('default', ['html', 'styles', 'scripts', 'images'], function() {
+gulp.task('default', ['html', 'vendor-styles', 'vendor-scripts', 'styles', 'scripts', 'images'], function() {
   browserSync.init({
     server: './dist',
     notify: false
@@ -108,5 +121,5 @@ gulp.task('clean:dist', function() {
 });
 // Use 'gulp build' or 'npm run build'
 gulp.task('build', function() {
-  runSequence('clean:dist', ['html', 'styles', 'scripts', 'images']);
+  runSequence('clean:dist', ['html', 'vendor-styles', 'vendor-scripts', 'styles', 'scripts', 'images']);
 });
