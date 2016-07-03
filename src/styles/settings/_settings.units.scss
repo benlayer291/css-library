@@ -7,5 +7,5 @@ $base-font-size:          $font-size-6 !default;
 $base-font-weight:        $weight-normal ! default;
 $base-line-height:        ($base-font-size * 1.5) !default;
 $base-spacing-unit:       ($base-font-size * 1.5) !default;
-$base-text-color:         #333 !default;
-$base-background-color:   #fff !default;
+$base-text-color:         $grey-darker !default;
+$base-background-color:   $white !default;
