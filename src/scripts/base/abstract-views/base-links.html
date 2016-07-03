@@ -3,21 +3,34 @@
 
     <div class="grid">
       <div class="grid__item">
-        <p>link tags appear with a <strong>pointer</strong>, in the <strong>base text color</strong> and <strong>without text decoration</strong> by default</p>
+        <p>link tags appear with a <strong>pointer</strong>, in the <strong>base text color</strong> and <strong>without text decoration</strong> by default, as shown to the right</p>
       </div>
       <div class="grid__item">
-        <p>Example<a href=""> link</a></p>
+        <p>Example<a href="#"> Link</a></p>
       </div>
-      <div class="grid__item">
-        <p>Example code goes here</p>
+      <div class="grid__item grid__item--is-half">
+
+<pre class="language-markup">
+<code class="language-markup">Example &lt;a href="#">Link&lt;/a></code>
+</pre>
+
       </div>
     </div>
 
     <div class="grid">
       <div class="grid__item">
         <p>the <strong>attention</strong> mixin* can be used to apply stylings for all link states i.e. hover, active, focus</p>
-        <small>*this has been applied to create this site but only on chosen links</small>
+        <small>*this has been applied to create this site</small>
       </div>
+      <div class="grid__item grid__item--is-half">
+
+<pre class="language-css">
+<code class="language-css">@include attention() {
+  color: lighten($base-text-color, 25%);
+}</code>
+</pre>
+      </div>
+
     </div>
     
   </div>

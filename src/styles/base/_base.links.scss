@@ -2,5 +2,8 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: $base-text-color;
-
+    
+    @include attention() {
+      color: lighten($base-text-color, 25%);
+    }
 }
