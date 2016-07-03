@@ -2,11 +2,68 @@
   <div class="wrapper">
     <p>Hero banners can have three sections: <strong>hero__head</strong>, <strong>hero__body</strong> and <strong>hero__foot</strong></p>
 
-    <p>Example code goes here</p>
+    <div class="box">
+      <div class="hero" style=" background: yellow;">
+        <div class="hero__head">
+          <p>Hero head</p>
+        </div> 
+        <div class="hero__body">
+          <p>Hero body</p>
+        </div> 
+        <div class="hero__foot">
+          <p>Hero foot</p>
+        </div> 
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="box">
+&lt;div class="hero">
+  &lt;div class="hero__head">
+    &lt;p>Hero head&lt;/p>
+  &lt;/div> 
+  &lt;div class="hero__body">
+    &lt;p>Hero body&lt;/p>
+  &lt;/div> 
+  &lt;div class="hero__foot">
+    &lt;p>Hero foot&lt;/p>
+  &lt;/div> 
+&lt;/div></code>
+</pre>
+
+    </div>
 
     <p>Hero banners come in three sizes: <strong>default</strong>, <strong>medium</strong> and <strong>large</strong>. The size can be chosen by using the correct modifier on the hero__body element: i.e. <strong>hero__body--is-medium</strong>, <strong>hero__body--is-large</strong></p>
 
-    <p>Example code goes here</p>
+    <div class="box">
+      <div class="hero hero--is-medium" style="background: yellow;">
+        <div class="hero__body">
+          <p>Hero Medium</p>
+        </div> 
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="hero hero--is-medium">
+  &lt;div class="hero__body">
+    &lt;p>Hero Medium&lt;/p>
+  &lt;/div> 
+&lt;/div></code>
+</pre>
+
+      <div class="hero hero--is-large" style="background: yellow;">
+        <div class="hero__body">
+          <p>Hero Large</p>
+        </div> 
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="hero hero--is-large">
+  &lt;div class="hero__body">
+    &lt;p>Hero Large&lt;/p>
+  &lt;/div> 
+&lt;/div></code>
+</pre>
+
+    </div>
 
   </div>
 </section>

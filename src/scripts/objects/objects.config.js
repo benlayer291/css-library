@@ -27,6 +27,14 @@ function ObjectsConfig($stateProvider) {
       title: 'Hero'
     })
 
+    .state('app.objects.box', {
+      url: '/box',
+      controller: 'ObjectsItemsCtrl',
+      controllerAs: '$ctrl',
+      templateUrl: 'objects/abstract-views/objects-box.html',
+      title: 'Box'
+    })
+
     .state('app.objects.section', {
       url: '/section',
       controller: 'ObjectsItemsCtrl',
