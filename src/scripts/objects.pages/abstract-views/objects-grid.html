@@ -1,0 +1,462 @@
+<section class="section">
+  <div class="wrapper">
+  
+    <p>A simple responsive grid built using flexbox. Unless specified the grid is only activated from <strong>small</strong> devices onwards. This means grid__items will stack on <strong>extra-small</strong> devices by default</p>
+
+    <p>To use the grid is very straightforward:</p>
+
+    <ul>
+      <li>Add a <strong>grid</strong> div</li>
+      <li>Add as many <strong>grid__item</strong> divs inside as required</li>
+    </ul>
+    
+    <p>The <strong>grid__items</strong> will automatically re-size with the number of <strong>grid__item</strong> divs added</p>
+
+    <div class="box">
+
+      <div class="grid">
+        <div class="grid__item">
+          <p style="text-align: center; background: red; padding: 16px;">Grid Item 1</p>
+        </div>
+        <div class="grid__item">
+          <p style="text-align: center; background: orange; padding: 16px;">Grid Item 2</p>
+        </div>
+        <div class="grid__item">
+          <p style="text-align: center; background: yellow; padding: 16px;"">Grid Item 3</p>
+        </div>
+        <div class="grid__item">
+          <p style="text-align: center; background: green; padding: 16px;">Grid Item 4</p>
+        </div>
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="grid">
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 1&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 2&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 3&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 4&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrapper">
+    <h1 class="title">Grid sizes</h1>
+
+    <p>You can specify the <strong>width</strong> of a single grid__item using one of the following modifiers:</p>
+
+    <ul>
+      <li>grid__item<strong>--is-whole</strong></li>
+      <li>grid__item<strong>--is-three-quarters</strong></li>
+      <li>grid__item<strong>--is-two-thirds</strong></li>
+      <li>grid__item<strong>--is-half</strong></li>
+      <li>grid__item<strong>--is-one-third</strong></li>
+      <li>grid__item<strong>--is-one-quarter</strong></li>
+    </ul>
+
+      <div class="box">
+
+        <div class="grid">
+          <div class="grid__item grid__item--is-whole">
+            <p style="text-align: center; background: red; padding: 16px;">Whole</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item grid__item--is-three-quarters">
+            <p style="text-align: center; background: pink; padding: 16px;">Three Quarters</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item grid__item--is-two-thirds">
+            <p style="text-align: center; background: orange; padding: 16px;"">Two Thirds</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item grid__item--is-half">
+            <p style="text-align: center; background: yellow; padding: 16px;"">Half</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item grid__item--is-one-third">
+            <p style="text-align: center; background: green; padding: 16px;">One Third</p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item grid__item--is-one-quarter">
+            <p style="text-align: center; background: blue; padding: 16px;">One Quarter</p>
+          </div>
+        </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="grid">
+  &lt;div class="grid__item grid__item--is-whole">
+      &lt;p style="text-align: center; background: red; padding: 16px;">Whole&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-three-quarters">
+      &lt;p style="text-align: center; background: pink; padding: 16px;">Three Quarters&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-two-thirds">
+      &lt;p style="text-align: center; background: orange; padding: 16px;"">Two Thirds&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-half">
+      &lt;p style="text-align: center; background: yellow; padding: 16px;"">Half&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-one-third">
+      &lt;p style="text-align: center; background: green; padding: 16px;">One Third&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-one-quarter">
+      &lt;p style="text-align: center; background: blue; padding: 16px;">One Quarter&lt;/p>
+    &lt;/div>
+  &lt;/div></code>
+</pre>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrapper">
+    <h1 class="title">Grid offsets</h1>
+
+    <p>You can specify the <strong>offset</strong> of a sized single grid__item using one of the following modifiers:</p>
+
+    <ul>
+      <li>grid__item<strong>--is-offset-three-quarters</strong></li>
+      <li>grid__item<strong>--is-offset-two-thirds</strong></li>
+      <li>grid__item<strong>--is-offset-half</strong></li>
+      <li>grid__item<strong>--is-offset-one-third</strong></li>
+      <li>grid__item<strong>--is-offset-one-quarter</strong></li>
+    </ul>
+
+    <div class="box">
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-whole">
+          <p style="text-align: center; background: red; padding: 16px;">Whole</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-offset-three-quarters">
+          <p style="text-align: center; background: pink; padding: 16px;">Offset Three Quarters</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-offset-two-thirds">
+          <p style="text-align: center; background: orange; padding: 16px;">Offset Two Thirds</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-offset-half">
+          <p style="text-align: center; background: yellow; padding: 16px;">Offset Half</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-offset-one-third">
+          <p style="text-align: center; background: green; padding: 16px;">Offset One Third</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-offset-one-quarter">
+          <p style="text-align: center; background: blue; padding: 16px;">Offset One Quarter</p>
+        </div>
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="grid">
+  &lt;div class="grid__item grid__item--is-whole">
+    &lt;p>Whole&lt;/p>
+  &lt;/div>
+&lt;/div>
+
+&lt;div class="grid">
+  &lt;div class="grid__item grid__item--is-offset-three-quarters">
+    &lt;p>Offset Three Quarters&lt;/p>
+  &lt;/div>
+&lt;/div>
+
+&lt;div class="grid">
+  &lt;div class="grid__item grid__item--is-offset-two-thirds">
+    &lt;p>Offset Two Thirds&lt;/p>
+  &lt;/div>
+&lt;/div>
+
+&lt;div class="grid">
+  &lt;div class="grid__item grid__item--is-offset-half">
+    &lt;p>Offset Half&lt;/p>
+  &lt;/div>
+&lt;/div>
+
+&lt;div class="grid">
+  &lt;div class="grid__item grid__item--is-offset-one-third">
+    &lt;p>Offset One Third&lt;/p>
+  &lt;/div>
+&lt;/div>
+
+&lt;div class="grid">
+  &lt;div class="grid__item grid__item--is-offset-one-quarter">style="text-align: center; background: blue; padding: 16px;">Offset One Quarter&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrapper">
+    <h1 class="title">Grid modifications</h1>
+
+    <p>To prevent stacking of grid__items on <strong>extra-small</strong> devices the modifier <strong>grid__item--is-mobile</strong> can be used</p>
+
+    <p>To prevent stacking of grid__items of specific width on <strong>extra-small</strong> devices the modifier <strong>grid__item--is-mobile</strong> can be used</p>
+
+    <div class="box">
+
+      <div class="grid grid--is-mobile">
+        <div class="grid__item">
+          <p style="text-align: center; background: red; padding: 16px;">Grid Item 1</p>
+        </div>
+        <div class="grid__item">
+          <p style="text-align: center; background: orange; padding: 16px;">Grid Item 2</p>
+        </div>
+        <div class="grid__item">
+          <p style="text-align: center; background: yellow; padding: 16px;"">Grid Item 3</p>
+        </div>
+        <div class="grid__item">
+          <p style="text-align: center; background: green; padding: 16px;">Grid Item 4</p>
+        </div>
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="grid">
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 1&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 2&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 3&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 4&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-mobile-whole">
+          <p style="text-align: center; background: red; padding: 16px;">Whole</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-mobile-three-quarters">
+          <p style="text-align: center; background: pink; padding: 16px;">Three Quarters</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-mobile-two-thirds">
+          <p style="text-align: center; background: orange; padding: 16px;">Two Thirds</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-mobile-half">
+          <p style="text-align: center; background: yellow; padding: 16px;">Half</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-mobile-one-third">
+          <p style="text-align: center; background: green; padding: 16px;">One Third</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid__item grid__item--is-mobile-one-quarter">
+          <p style="text-align: center; background: blue; padding: 16px;">One Quarter</p>
+        </div>
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-mobile-whole">
+      &lt;p>Whole&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-mobile-three-quarters">
+      &lt;p>Three Quarters&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-mobile-two-thirds">
+      &lt;p>Two Thirds&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-mobile-half">
+      &lt;p>Half&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-mobile-one-third">
+      &lt;p>One Third&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="grid__item grid__item--is-mobile-one-quarter">
+      &lt;p>One Quarter&lt;/p>
+    &lt;/div>
+  &lt;/div></code>
+</pre>
+
+    </div>
+
+    <p>To remove the gaps between grid__items the modifier <strong>grid--is-gapless</strong> can be used</p>
+
+    <div class="box">
+
+      <div class="grid grid--is-gapless">
+        <div class="grid__item">
+          <p style="text-align: center; background: red; padding: 16px;">Grid Item 1</p>
+        </div>
+        <div class="grid__item">
+          <p style="text-align: center; background: orange; padding: 16px;">Grid Item 2</p>
+        </div>
+        <div class="grid__item">
+          <p style="text-align: center; background: yellow; padding: 16px;"">Grid Item 3</p>
+        </div>
+        <div class="grid__item">
+          <p style="text-align: center; background: green; padding: 16px;">Grid Item 4</p>
+        </div>
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="grid grid--is-gapless">
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 1&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 2&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 3&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 4&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+
+    </div>
+
+    <p>When using grid__items of specified width, to start a new line you can create a new <strong>grid</strong>. You can also use the modifier <strong>grid--is-multiline</strong> to add more column elements that would fit in a single row (useful for when displaying repeated content retrieved from a server)</p>
+
+    <div class="box">
+
+      <div class="grid grid--is-multiline">
+        <div class="grid__item grid__item--is-one-third">
+          <p style="text-align: center; background: red; padding: 16px;">Grid Item 1</p>
+        </div>
+        <div class="grid__item grid__item--is-one-third">
+          <p style="text-align: center; background: orange; padding: 16px;">Grid Item 2</p>
+        </div>
+        <div class="grid__item grid__item--is-one-third">
+          <p style="text-align: center; background: yellow; padding: 16px;"">Grid Item 3</p>
+        </div>
+        <div class="grid__item grid__item--is-one-third">
+          <p style="text-align: center; background: green; padding: 16px;">Grid Item 4</p>
+        </div>
+        <div class="grid__item grid__item--is-one-third">
+          <p style="text-align: center; background: red; padding: 16px;">Grid Item 5</p>
+        </div>
+        <div class="grid__item grid__item--is-one-third">
+          <p style="text-align: center; background: orange; padding: 16px;">Grid Item 6</p>
+        </div>
+        <div class="grid__item grid__item--is-one-third">
+          <p style="text-align: center; background: yellow; padding: 16px;"">Grid Item 7</p>
+        </div>
+        <div class="grid__item grid__item--is-one-third">
+          <p style="text-align: center; background: green; padding: 16px;">Grid Item 8</p>
+        </div>
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="grid grid--is-multiline">
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 1&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 2&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 3&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 4&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 5&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 6&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 7&lt;/p>
+  &lt;/div>
+  &lt;div class="grid__item">
+    &lt;p>Grid Item 8&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+
+    </div>
+
+  </div>
+</section>

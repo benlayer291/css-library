@@ -1,7 +1,7 @@
 var angular = require('angular');
 
 // Create module to inject into our app
-var objectsModule = angular.module('app.objects', []);
+var objectsModule = angular.module('app.objectsPages', []);
 
 // UI-router
 var ObjectsConfig = require('./objects.config');

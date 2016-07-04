@@ -109,7 +109,7 @@ gulp.task('default', ['html', 'vendor-styles', 'vendor-scripts', 'styles', 'scri
     notify: false
   });
   gulp.watch('src/styles/**/*.scss', ['styles']);
-  gulp.watch('src/img/**/*', ['images']);
+  gulp.watch('src/images/**/*', ['images']);
   gulp.watch('src/scripts/**/*.js', ['scripts', 'lint']);
   gulp.watch('src/scripts/**/*.html', ['views']);
   gulp.watch('src/index.html', ['html']);

@@ -8,14 +8,14 @@ function BaseConfig($stateProvider) {
       abstract: true,
       controller: 'BaseCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'base/base.html',
+      templateUrl: 'base.pages/base.html',
     })
 
     .state('app.base.headings', {
       url: '/headings',
       controller: 'BaseItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'base/abstract-views/base-headings.html',
+      templateUrl: 'base.pages/abstract-views/base-headings.html',
       title: 'Headings'
     })
 
@@ -23,7 +23,7 @@ function BaseConfig($stateProvider) {
       url: '/links',
       controller: 'BaseItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'base/abstract-views/base-links.html',
+      templateUrl: 'base.pages/abstract-views/base-links.html',
       title: 'Links'
     })
 
@@ -31,7 +31,7 @@ function BaseConfig($stateProvider) {
       url: '/lists',
       controller: 'BaseItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'base/abstract-views/base-lists.html',
+      templateUrl: 'base.pages/abstract-views/base-lists.html',
       title: 'Lists'
     });
 }

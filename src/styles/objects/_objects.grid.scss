@@ -4,9 +4,9 @@
   margin-right: ($base-spacing-unit * -0.5);
   margin-left: ($base-spacing-unit * -0.5);
 
-  &:last-child {
-    margin-bottom: ($base-spacing-unit * -0.5);
-  }
+  // &:last-child {
+  //   margin-bottom: ($base-spacing-unit * -0.5);
+  // }
 
   &:not(:last-child) {
     margin-bottom: ($base-spacing-unit * 0.5);
@@ -25,7 +25,7 @@
   &--is-gapless {
     margin-top: 0;
     margin-right: 0;
-    margin-top: 0;
+    margin-left: 0;
 
     &:last-child {
       margin-bottom: 0;
@@ -53,6 +53,10 @@
   &__item {
     flex: 1;
     padding: ($base-spacing-unit * 0.5);
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
     
     &--is-mobile-whole {
         flex: none;

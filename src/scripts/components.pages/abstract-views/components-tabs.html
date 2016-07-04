@@ -1,0 +1,243 @@
+<section class="section">
+  <div class="wrapper">
+  
+    <p>A simple responsive set of <strong>tabs</strong></p>
+
+    <p>To get started with the tabs is very straightforward:</p>
+
+    <ul>
+      <li>Create <strong>tabs</strong> container</li>
+      <li>Add a <strong>tabs__list</strong> ul element</li>
+      <li>Include as many <strong>tab__item</strong>s as required</li>
+      <li>The <strong>tab__item</strong>s can have an active state by using the modifier <strong>tab__item--is-active</strong></li>
+    </ul>
+
+    <div class="box">
+
+      <div class="tabs">
+        <ul class="tabs__list">
+          <li class="tabs__item tabs__item--is-active">
+            <a href="#">
+              Item 1
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 2
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 3
+            </a>
+          </li>
+        </ul>
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="tabs">
+  &lt;ul class="tabs__list">
+    &lt;li class="tabs__item tabs__item--is-active">
+      &lt;a href="#">
+        Item 1
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 2
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 3
+      &lt;/a>
+    &lt;/li>
+  &lt;/ul>
+&lt;/div></code>
+</pre>
+
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrapper">
+  
+    <p><strong>Tabs</strong> can be aligned differently using one of <strong>two modifiers</strong>:</p>
+
+    <ul>
+      <li><strong>tabs--is-center</strong></li>
+      <li><strong>tabs--is-right</strong></li>      
+    </ul>
+
+    <div class="box">
+
+      <div class="tabs tabs--is-center">
+        <ul class="tabs__list">
+          <li class="tabs__item tabs__item--is-active">
+            <a href="#">
+              Item 1
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 2
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 3
+            </a>
+          </li>
+        </ul>
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="tabs tabs--is-center">
+  &lt;ul class="tabs__list">
+    &lt;li class="tabs__item tabs__item--is-active">
+      &lt;a href="#">
+        Item 1
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 2
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 3
+      &lt;/a>
+    &lt;/li>
+  &lt;/ul>
+&lt;/div></code>
+</pre>
+
+    </div>
+
+    <p><strong>Tabs</strong> can have mulitple <strong>tab__lists</strong> aligned differently using one of <strong>three modifiers</strong>:</p>
+
+    <ul>
+      <li><strong>tabs__list--is-left</strong></li>
+      <li><strong>tabs__list--is-center</strong></li>
+      <li><strong>tabs__list--is-right</strong></li>      
+    </ul>
+
+    <div class="box">
+
+      <div class="tabs">
+        <ul class="tabs__list tabs__list--is-left">
+          <li class="tabs__item tabs__item--is-active">
+            <a href="#">
+              Item 1
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 2
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 3
+            </a>
+          </li>
+        </ul>
+        <ul class="tabs__list tabs__list--is-center">
+          <li class="tabs__item">
+            <a href="#">
+              Item 4
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 5
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 6
+            </a>
+          </li>
+        </ul>
+        <ul class="tabs__list tabs__list--is-right">
+          <li class="tabs__item">
+            <a href="#">
+              Item 7
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 8
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#">
+              Item 9
+            </a>
+          </li>
+        </ul>            
+      </div>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="tabs">
+  &lt;ul class="tabs__list tabs__list--is-left">
+    &lt;li class="tabs__item tabs__item--is-active">
+      &lt;a href="#">
+        Item 1
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 2
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 3
+      &lt;/a>
+    &lt;/li>
+  &lt;/ul>
+  &lt;ul class="tabs__list tabs__list--is-center">
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 4
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 5
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 6
+      &lt;/a>
+    &lt;/li>
+  &lt;/ul>
+  &lt;ul class="tabs__list tabs__list--is-right">
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 7
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 8
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="tabs__item">
+      &lt;a href="#">
+        Item 9
+      &lt;/a>
+    &lt;/li>
+  &lt;/ul>            
+&lt;/div></code>
+</pre>
+
+    </div>
+    
+  </div>
+</section>

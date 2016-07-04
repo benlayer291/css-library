@@ -1,0 +1,105 @@
+<section class="section">
+  <div class="wrapper">
+  
+    <p>A simple responsive <strong>nav bar</strong> built using flexbox that can act as a starting point to building a more elaborate navigation</p>
+
+    <p>To get started with the nav is very straightforward:</p>
+
+    <ul>
+      <li>Decide which parts to include, the nav can have a total of <strong>three parts</strong>:</li>
+      <ul>  
+        <li><strong>nav__left</strong></li>
+        <li><strong>nav__center</strong></li>
+        <li><strong>nav__right</strong></li>
+      </ul>
+      <li>Add <strong>nav__item</strong> divs inside each part as required. Special types include the <strong>nav__logo</strong> and <strong>nav__brand</strong> items</li>
+      <li>The <strong>nav__item</strong> can have an active state by using the modifier <strong>nav__item--is-active</strong></li>
+      <li><strong>nav__toggle</strong> can be used alongside a part of the nav so that it is replaced with a hamburger on upto<strong>medium</strong> sized screens</li>
+    </ul>
+
+    <p>There is <strong>no javascript</strong> included with this nav bar so you can write your own as you wish</p>
+
+    <div class="box">
+
+      <nav class="nav" style="border-bottom: 1px solid #000;">
+        <div class="nav__left">
+          <a class="nav__logo" href="#">
+           <img src="images/styleguide-wordmark.png" alt="logo">
+          </a>
+          <a class="nav__brand" href="#">
+           Brand
+          </a>
+        </div>
+        <div class="nav__center">
+          <a class="nav__item" href="#">
+            Nav Item
+          </a>
+          <a class="nav__item" href="#">
+            Nav Item
+          </a>
+        </div>
+
+        <span class="nav__toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+
+        <div class="nav__right">
+          <a class="nav__item" href="#">
+            Nav Item
+          </a>
+          <a class="nav__item" href="#">
+            Nav Item
+          </a>
+          <a class="nav__item" href="#">
+            Nav Item
+          </a>
+        </div>
+      </nav>
+
+<pre class="language-markup">
+<code class="language-markup">&lt;nav class="nav">
+  
+  &lt;div class="nav__left">
+    &lt;a class="nav__logo" href="#">
+     &lt;img src="images/styleguide-wordmark.png" alt="logo">
+    &lt;/a>
+    &lt;a class="nav__brand" href="#">
+     Brand
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="nav__center">
+    &lt;a class="nav__item" href="#">
+      Nav Item
+    &lt;/a>
+    &lt;a class="nav__item" href="#">
+      Nav Item
+    &lt;/a>
+  &lt;/div>
+
+  &lt;span class="nav__toggle">
+    &lt;span>&lt;/span>
+    &lt;span>&lt;/span>
+    &lt;span>&lt;/span>
+  &lt;/span>
+
+  &lt;div class="nav__right">
+    &lt;a class="nav__item" href="#">
+      Nav Item
+    &lt;/a>
+    &lt;a class="nav__item" href="#">
+      Nav Item
+    &lt;/a>
+    &lt;a class="nav__item" href="#">
+      Nav Item
+    &lt;/a>
+  &lt;/div>
+
+&lt;/nav></code>
+</pre>
+
+    </div>
+    
+  </div>
+</section>

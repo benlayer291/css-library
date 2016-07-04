@@ -1,7 +1,7 @@
 var angular = require('angular');
 
 // Create module to inject into our app
-var homeModule = angular.module('app.home', []);
+var homeModule = angular.module('app.homePages', []);
 
 // UI-router
 var HomeConfig = require('./home.config');

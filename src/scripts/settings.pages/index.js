@@ -1,7 +1,7 @@
 var angular = require('angular');
 
 // Create module to inject into our app
-var settingsModule = angular.module('app.settings', []);
+var settingsModule = angular.module('app.settingsPages', []);
 
 // UI-router
 var SettingsConfig = require('./settings.config');

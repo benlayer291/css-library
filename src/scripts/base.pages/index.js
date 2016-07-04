@@ -1,7 +1,7 @@
 var angular = require('angular');
 
 // Create module to inject into our app
-var baseModule = angular.module('app.base', []);
+var baseModule = angular.module('app.basePages', []);
 
 // UI-router
 var BaseConfig = require('./base.config');

@@ -1,0 +1,49 @@
+<nav class="nav">
+  <div class="nav__left">
+    <a class="nav__brand"
+      ui-sref="app.home">
+     <h1>Styleguide</h1>
+    </a>
+  </div>
+
+  <span class="nav__toggle" 
+    ng-class="{ 'nav__toggle--close': $ctrl.mobileMenuShowing }" 
+    ng-click="$ctrl.toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <div class="nav__right" ng-class="{ nav__menu: $ctrl.mobileMenuShowing }">
+    <a class="nav__item"
+      ui-sref-active="nav__item--active"
+      ui-sref="app.home"
+      ng-click="$ctrl.closeMenu()">
+        Home
+    </a>
+    <a class="nav__item"
+      ui-sref-active="{'nav__item--active' : 'app.settings' }"
+      ui-sref="app.settings.breakpoints"
+      ng-click="$ctrl.closeMenu()">
+        Settings
+    </a>
+    <a class="nav__item"
+      ui-sref-active="{'nav__item--active' : 'app.base' }"
+      ui-sref="app.base.headings"
+      ng-click="$ctrl.closeMenu()">
+        Base
+    </a>
+    <a class="nav__item"
+      ui-sref-active="{'nav__item--active' : 'app.objects' }"
+      ui-sref="app.objects.header"
+      ng-click="$ctrl.closeMenu()">
+        Objects
+    </a>
+    <a class="nav__item"
+      ui-sref-active="{'nav__item--active' : 'app.components' }"
+      ui-sref="app.components.nav"
+      ng-click="$ctrl.closeMenu()">
+        Components
+    </a>
+  </div>
+</nav>

@@ -8,14 +8,14 @@ function ObjectsConfig($stateProvider) {
       abstract: true,
       controller: 'ObjectsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'objects/objects.html',
+      templateUrl: 'objects.pages/objects.html',
     })
 
     .state('app.objects.header', {
       url: '/header',
       controller: 'ObjectsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'objects/abstract-views/objects-header.html',
+      templateUrl: 'objects.pages/abstract-views/objects-header.html',
       title: 'Header'
     })
 
@@ -23,7 +23,7 @@ function ObjectsConfig($stateProvider) {
       url: '/hero',
       controller: 'ObjectsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'objects/abstract-views/objects-hero.html',
+      templateUrl: 'objects.pages/abstract-views/objects-hero.html',
       title: 'Hero'
     })
 
@@ -31,7 +31,7 @@ function ObjectsConfig($stateProvider) {
       url: '/box',
       controller: 'ObjectsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'objects/abstract-views/objects-box.html',
+      templateUrl: 'objects.pages/abstract-views/objects-box.html',
       title: 'Box'
     })
 
@@ -39,7 +39,7 @@ function ObjectsConfig($stateProvider) {
       url: '/section',
       controller: 'ObjectsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'objects/abstract-views/objects-section.html',
+      templateUrl: 'objects.pages/abstract-views/objects-section.html',
       title: 'Section'
     })
 
@@ -47,7 +47,7 @@ function ObjectsConfig($stateProvider) {
       url: '/wrapper',
       controller: 'ObjectsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'objects/abstract-views/objects-wrapper.html',
+      templateUrl: 'objects.pages/abstract-views/objects-wrapper.html',
       title: 'Wrapper'
     })
 
@@ -55,7 +55,7 @@ function ObjectsConfig($stateProvider) {
       url: '/grid',
       controller: 'ObjectsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'objects/abstract-views/objects-grid.html',
+      templateUrl: 'objects.pages/abstract-views/objects-grid.html',
       title: 'Grid'
     })
 
@@ -63,7 +63,7 @@ function ObjectsConfig($stateProvider) {
       url: '/footer',
       controller: 'ObjectsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'objects/abstract-views/objects-footer.html',
+      templateUrl: 'objects.pages/abstract-views/objects-footer.html',
       title: 'Footer'
     });
 }

@@ -8,14 +8,14 @@ function ComponentsConfig($stateProvider) {
       abstract: true,
       controller: 'ComponentsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'components/components.html',
+      templateUrl: 'components.pages/components.html',
     })
 
     .state('app.components.nav', {
       url: '/nav',
       controller: 'ComponentsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'components/abstract-views/components-nav.html',
+      templateUrl: 'components.pages/abstract-views/components-nav.html',
       title: 'Nav'
     })
 
@@ -23,7 +23,7 @@ function ComponentsConfig($stateProvider) {
       url: '/tabs',
       controller: 'ComponentsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'components/abstract-views/components-tabs.html',
+      templateUrl: 'components.pages/abstract-views/components-tabs.html',
       title: 'Tabs'
     })
 
@@ -31,7 +31,7 @@ function ComponentsConfig($stateProvider) {
       url: '/card',
       controller: 'ComponentsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'components/abstract-views/components-card.html',
+      templateUrl: 'components.pages/abstract-views/components-card.html',
       title: 'Card'
     });
 }

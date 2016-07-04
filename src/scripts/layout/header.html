@@ -1,46 +1,7 @@
 <div class="header" style="box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1);">
   <div class="wrapper">
-    <nav class="nav">
-      <div class="nav__left">
-        <a class="nav__brand"
-          ui-sref="app.home">
-         <h1>Styleguide</h1>
-        </a>
-      </div>
-
-      <span class="nav__toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-
-      <div class="nav__right">
-        <a class="nav__item"
-          ui-sref-active="nav__item--active"
-          ui-sref="app.home">
-            Home
-        </a>
-        <a class="nav__item"
-          ui-sref-active="{'nav__item--active' : 'app.settings' }"
-          ui-sref="app.settings.breakpoints">
-            Settings
-        </a>
-        <a class="nav__item"
-          ui-sref-active="{'nav__item--active' : 'app.base' }"
-          ui-sref="app.base.headings">
-            Base
-        </a>
-        <a class="nav__item"
-          ui-sref-active="{'nav__item--active' : 'app.objects' }"
-          ui-sref="app.objects.header">
-            Objects
-        </a>
-        <a class="nav__item"
-          ui-sref-active="{'nav__item--active' : 'app.components' }"
-          ui-sref="app.components.nav">
-            Components
-        </a>
-      </div>
-    </nav>
+  
+    <nav-bar></nav-bar>
+    
   </div>
 </div>

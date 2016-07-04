@@ -8,7 +8,7 @@
     <p>The <strong>image</strong> section can have various ratios applied to it by adding to or modifying the existing <strong>image--is-4by3</strong> modifier</p>
 
     <div class="grid">
-      <div class="grid__item grid__item--is-one-third">
+      <div class="grid__item">
         
         <div class="card" style="box-shadow: 0 2px 3px rgba(0,0,0, 0.1), 0 0 0 1px rgba(0,0,0, 0.1);">
           <div class="card__image">
@@ -28,11 +28,32 @@
         </div>
 
       </div>
-      <div class="grid__item">
+
+      <div class="grid__item grid__item--is-two-thirds">
         
-        <p>Example code goes here</p>
+        <div class="box">
+<pre class="language-markup">
+<code class="language-markup">&lt;div class="card">
+  &lt;div class="card__image">
+    &lt;figure class="image image--is-4by3">
+      &lt;img src="http://placehold.it/300x225" alt="4x3 placehold image">
+    &lt;/figure>
+  &lt;/div>
+  &lt;div class="card__header">
+    An example card header
+  &lt;/div>
+  &lt;div class="card__body">
+    An example card content
+  &lt;/div>
+  &lt;div class="card__footer">
+    An example card footer
+  &lt;/div>
+&lt;/div></code>
+</pre>
+        </div>
 
       </div>
+
     </div>
 
     <small>*box-shadow applied to card has been applied seperately and does not come with the component</small>

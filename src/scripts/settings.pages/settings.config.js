@@ -8,14 +8,14 @@ function SettingsConfig($stateProvider) {
       abstract: true,
       controller: 'SettingsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'settings/settings.html',
+      templateUrl: 'settings.pages/settings.html',
     })
 
     .state('app.settings.breakpoints', {
       url: '/breakpoints',
       controller: 'SettingsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'settings/abstract-views/settings-breakpoints.html',
+      templateUrl: 'settings.pages/abstract-views/settings-breakpoints.html',
       title: 'Breakpoints'
     })
 
@@ -23,7 +23,7 @@ function SettingsConfig($stateProvider) {
       url: '/typography',
       controller: 'SettingsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'settings/abstract-views/settings-typography.html',
+      templateUrl: 'settings.pages/abstract-views/settings-typography.html',
       title: 'Typography'
     })
 
@@ -31,7 +31,7 @@ function SettingsConfig($stateProvider) {
       url: '/colors',
       controller: 'SettingsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'settings/abstract-views/settings-colors.html',
+      templateUrl: 'settings.pages/abstract-views/settings-colors.html',
       title: 'Colors'
     })
 
@@ -39,7 +39,7 @@ function SettingsConfig($stateProvider) {
       url: '/units',
       controller: 'SettingsItemsCtrl',
       controllerAs: '$ctrl',
-      templateUrl: 'settings/abstract-views/settings-units.html',
+      templateUrl: 'settings.pages/abstract-views/settings-units.html',
       title: 'Units'
     });
 }
